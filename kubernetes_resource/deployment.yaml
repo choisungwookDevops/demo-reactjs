@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reactjs-demo
+  namespace: default
+  labels:
+    app: front-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front-demo
+  template:
+    metadata:
+      labels:
+        app: front-demo
+    spec:
+      containers:
+      - name: front
+        image: IMAGE_NAME
+        ports:
+        - containerPort: 80
