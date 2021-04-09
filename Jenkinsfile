@@ -1,4 +1,4 @@
-def DOCKER_REGISTRY = "choisunguk"
+def DOCKER_REGISTRY = "192.168.0.194:30282"
 def DEPLOYMNET_NAME = "reactjs-demo"
 def DEPLOYMENT_NAMESPACE = "default"
 
